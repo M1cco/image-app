@@ -11,7 +11,7 @@ export async function getStaticProps() {
     .from("images")
     .select("*")
     .order("id")
-  const res = await fetch("https://image-fw9ykka9n-m1cco.vercel.app/")
+  const res = await fetch("https://image-app-m1cco.vercel.app/")
   if (!res.ok) {
     throw new Error(`Virhe päivitettäessä sivua, ${res.status}`)
   }
